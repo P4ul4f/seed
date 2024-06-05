@@ -45,6 +45,8 @@ task_manager = TaskManager()
 # Crear una instancia de Task
 task1 = Task("Aprender Python")
 
+task2 = Task("Aprender Java")
+
 # Añadir la tarea al TaskManager
 task_manager.add_task(task1)
 
