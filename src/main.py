@@ -21,9 +21,10 @@ class TaskManager:
         else:
             raise ValueError("Task not found")
         
+    #Metodo para mostrar las tareas de la lista, las enumera
     def get_tasks(self):
-        for task in self.tasks:
-            print(task.description)
+        for idx, task in enumerate(self.tasks, start=1):
+            print(f"Task {idx}: {task.description}")
 
 #Constructor de la clase task, se llama cuando se crea una instancia de task 
 #inicializa la descripcion de la tarea
